@@ -1,17 +1,23 @@
 
 
 #include "header.h"
+void mainmenu();
+void printempmenu();
+void printheader();
+void printmainmenu();
+int emp_info();
 
+int readline(char *string, int n);
 FILE *fa;
 
 
 
 void new_emp(FILE *fe, FILE *fd, FILE *fa) {
-	char yn, err[32], dat[16], tim[16];
+	char yn, err[32];
 	int flag = 0, id, op = 0, n;
 	employee e;
 	doc_avail a;
-	days d;
+	
 	fseek(fe, 0, SEEK_END);
 	fseek(fd, 0, SEEK_END);
 	fseek(fa, 0, SEEK_END);
@@ -109,7 +115,7 @@ void new_emp(FILE *fe, FILE *fd, FILE *fa) {
 }
 
 void edit_emp(FILE *fe, FILE *fd) {
-	char yn, err[32], dat[16], tim[16];
+	char yn, err[32];
 	employee e;
 	int id, flag = 0, flag1 = 0, op, n;
 	yn = 'Y';

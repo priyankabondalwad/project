@@ -1,12 +1,13 @@
 
 
 #include "header.h"
-
+void printheader();
+void printmainmenu();
 extern FILE *fa;
 
-void main() {
+int main() {
 	system("clear");
-	FILE *fp;
+	
 	
 	
 		system("clear");
@@ -16,7 +17,7 @@ void main() {
 		system("sleep 1");
 		printf("\n\n\n\n\n\t\t\t\t\t\t\tHOSPITAL RECORD MANAGEMENT SYSTEM\n");
 		system("sleep 1");
-		printf("\n\n\n\n\n\t\t\t\t\t\t    SUSHANT CHAVAN, NIKHIL BODKE, GAURAV BHANSALI\n");
+		printf("\n\n\n\n\n\t\t\t\t\t\t    PRACHI PATEL SUMIT SATHE MAYUR MARATHE\n");
 		system("sleep 2");
 		system("clear");
 		printheader();

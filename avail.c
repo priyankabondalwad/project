@@ -2,12 +2,17 @@
 
 
 #include "header.h"
+void printmainmenu();
+void printheader();
+void printavailmenu();
+int readline(char *string, int n);
+int avail_info();
 
 FILE *fa;
 
 
 void new_avail(FILE *fa) {
-	char yn, err[32], dat[16], tim[16];
+	char yn, err[32];
 	int flag = 0, id, op, n;
 	doc_avail a;
 	fseek(fa, 0, SEEK_END);

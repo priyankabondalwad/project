@@ -1,9 +1,13 @@
 
 #include "header.h"
-
+void printpatmenu();
+void printmainmenu();
+void printheader();
+int readline(char *string, int n);
+int pat_info();
 
 void new_pat(FILE *fp) {
-	char yn, err[32], dat[16], tim[16];
+	char yn, err[32];
 	int flag = 0, reg, op, n;
 	patient p;
 	fseek(fp, 0, SEEK_END);
@@ -87,7 +91,7 @@ void new_pat(FILE *fp) {
 
 
 void edit_pat(FILE *fp) {
-	char yn, err[32], dat[16], tim[16];
+	char yn, err[32];
 	patient p;
 	int reg, flag = 0, op, n;
 	yn = 'Y';

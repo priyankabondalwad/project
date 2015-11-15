@@ -1,10 +1,14 @@
 
 #include "header.h"
+void pat_info();
+void emp_info();
+void avail_info();
 
+int readline(char *string, int n);
 FILE *fa;
 
 void printheader() {
-	char dat[16], tim[16];
+	
 	system("clear");
 	
 	
